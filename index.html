@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Khairul Fathan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div id="aside">
+        <!-- <div class="background-image"></div> -->
+      </div>
+      <div id="mainside">
+        <!-- navbar -->
+        <div class="navbar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Profile</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portofolio</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+          <h3 class="logo">KF</h3>
+        </div>
+        <!-- hero -->
+        <section id="hero">
+          <h1>
+            HI!, I AM KHAIRUL <br />
+            FATHAN HABIE.
+          </h1>
+          <p>
+            I am a Junior Web Developer based on Gorontalo, Indonesia. I am here
+            to help you create an amazing website for you.
+          </p>
+          <p>
+            I am currently work at Muhammadiyah University Of Gorontalo as a
+            Website Developer.
+          </p>
+        </section>
+        <!-- education -->
+        <section id="education">
+          <h2>Education</h2>
+          <div class="timeline">
+            <div class="circle-start">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <ul class="timeline-list">
+              <li>
+                <h6>2018 - 2023</h6>
+                <h5>Bachelor Degree | Muhammadiyah University Of Gorontalo</h5>
+                <p>
+                  Bachelor of Computer Science form Muhammadiyah University Of
+                  Gorontalo. I am started many programming project specifically
+                  application based on website. Particapate in several web
+                  programming competitions in Gorontalo.
+                </p>
+              </li>
+              <li>
+                <h6>2016 - 2018</h6>
+                <h5>Senior High School | MA Muhammadiyah Gorontalo</h5>
+                <p>
+                  I am start learning programming language with pascal and being
+                  a olympic team in province level and start learning how to
+                  build an application based on website.
+                </p>
+              </li>
+              <li>
+                <h6>2012 - 2015</h6>
+                <h5>Junior High School | MTs N Gorontalo</h5>
+                <p>
+                  I am start learning basic computer, like a MS. Word, MS.
+                  Excel, and MS. Power Point
+                </p>
+              </li>
+              <li>
+                <h6>2006 - 2012</h6>
+                <h5>Elementary School | SD N 85 Gorontalo</h5>
+                <p>I am participated at math olympic</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- footer -->
+        <footer>
+          <p>
+            &copy; copyright
+            <a href="https://www.instagram.com/khairul_fathan/" target="_blank"
+              >KhairullFathan</a
+            >
+            <span id="year-display"></span>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script>
+      const date = new Date()
+      const yearElement = document.getElementById('year-display')
+      yearElement.innerHTML = date.getFullYear()
+    </script>
+  </body>
+</html>
