@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <title>Khairul Fathan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div id="aside"></div>
+      <div id="mainside">
+        <!-- navbar -->
+        <div class="navbar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portofolio</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+          <h3 class="logo">KF</h3>
+        </div>
+        <!-- services -->
+        <section id="services">
+          <h2>My services</h2>
+          <div class="services-container">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="fa-solid fa-money-bill"></i>
+              </div>
+              <div class="service-text">
+                <h6>Low Price</h6>
+                <p>Tell all you want and adjust with you budget.</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="service-text">
+                <h6>Clean Code</h6>
+                <p>
+                  I always give a clean code, so the application is easy to
+                  understand and easy to develop .
+                </p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="service-text">
+                <h6>Best Result</h6>
+                <p>I will give you best result for you application ideas.</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="fa-solid fa-wrench"></i>
+              </div>
+              <div class="service-text">
+                <h6>Free Maintenance</h6>
+                <p>
+                  I will give you free 1 month maintenance for you application.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- skills -->
+        <section id="skills">
+          <h2>MY SKILLS</h2>
+          <div class="skills-container">
+            <div class="skill">
+              <div>
+                <h5>HTML5</h5>
+              </div>
+              <div class="progress-bar" data-value="90"></div>
+            </div>
+            <div class="skill">
+              <div>
+                <h5>CSS3</h5>
+              </div>
+              <div class="progress-bar" data-value="70"></div>
+            </div>
+            <div class="skill">
+              <div>
+                <h5>Javascript</h5>
+              </div>
+              <div class="progress-bar" data-value="75"></div>
+            </div>
+            <div class="skill">
+              <div>
+                <h5>NodeJS</h5>
+              </div>
+              <div class="progress-bar" data-value="70"></div>
+            </div>
+            <div class="skill">
+              <div>
+                <h5>ReactJS</h5>
+              </div>
+              <div class="progress-bar" data-value="65"></div>
+            </div>
+            <div class="skill">
+              <div>
+                <h5>PHP</h5>
+              </div>
+              <div class="progress-bar" data-value="80"></div>
+            </div>
+            <div class="skill">
+              <div>
+                <h5>Codeigniter</h5>
+              </div>
+              <div class="progress-bar" data-value="85"></div>
+            </div>
+            <div class="skill">
+              <div>
+                <h5>MySQL</h5>
+              </div>
+              <div class="progress-bar" data-value="80"></div>
+            </div>
+          </div>
+        </section>
+        <!-- footer -->
+        <footer>
+          <p>
+            &copy; copyright
+            <a href="https://www.instagram.com/khairul_fathan/" target="_blank"
+              >KhairullFathan</a
+            >
+            <span id="year-display"></span>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script>
+      const date = new Date()
+      const yearElement = document.getElementById('year-display')
+      yearElement.innerHTML = date.getFullYear()
+      // proggress bar
+      const overlayBackground = (val) => {
+        let node = document.createElement('span')
+        node.className = 'progress-bar-overlay'
+        node.style.width = `${val}%`
+        node.textContent = `${val}%`
+        return node
+      }
+      let progressBar = document.querySelectorAll('.progress-bar')
+      if (progressBar.length > 0) {
+        progressBar.forEach((e, i) => {
+          const value = e.getAttribute('data-value')
+          e.appendChild(overlayBackground(value))
+        })
+      }
+    </script>
+  </body>
+</html>
